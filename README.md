@@ -2,7 +2,7 @@
 
 Сайт для компании, оказывающий услуги маркетинга и администрирования.
 
-Ссылка на сайт [GitHub Pages](https://theznat.github.io/GreenIT/)
+Ссылка на сайт [Готовый проект](https://spb-git.ru)
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/platane/platane/main.yml?label=action&style=flat-square)
 
@@ -18,6 +18,8 @@
 - [vite](https://vite-docs-ru.vercel.app/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Next.js](https://nextjs-ru.vercel.app/)
+- [swagger](https://docs.swagger.io/spec.html)
+- [express](https://expressjs.com/ru/)
 
 ## Начало работы
 
@@ -39,6 +41,7 @@ npm run build
 
 ## Статус проекта
 
-- [x] Верстка проекта
-- [x] Написание скриптов для работы со страницей
+- [x] [Верстка проекта](https://github.com/TheZnat/GreenIT) 
+- [x] Написание скриптов для работы со страницей на Vanilla js
+- [x] Написание beckend на Express.js
 - [ ] Перенос пректа на Next.js
