@@ -3,11 +3,11 @@ const router = express.Router();
 const {reviews, postCase, active} = require('../controllers/cases');
 
 /* api/cases/reviews */
-router.post('/reviews', reviews);
+router.get('/reviews', reviews);
 /* api/cases/postCase */
-router.post('/postCase', postCase);
-/* api/cases/:id/active */
-router.post('/:id/active', active);
+router.get('/postCase', postCase);
+/* api/cases/active/:id */
+router.post('/active/:id', active);
 
 
 module.exports = router;
