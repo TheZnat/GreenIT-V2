@@ -1,7 +1,7 @@
 import "swiper/css/bundle";
 import { addSlider } from "./src/slider/addSlider.js";
 import { switchReviews } from "./src/reviews/reviews.js";
-import {findPostId} from "./src/post/postId.js";
+import { findPostId } from "./src/post/postId.js";
 // import {openPostPage} from "./src/post/post.js";
 
 if (navigator.platform.match(/iPhone|iPod|iPad/)) {
@@ -30,9 +30,6 @@ if (navigator.platform.match(/iPhone|iPod|iPad/)) {
   new Gallery(document.getElementById("gallery"));
 }
 
-// findPostId();
-
-
-
+findPostId();
 
 switchReviews();

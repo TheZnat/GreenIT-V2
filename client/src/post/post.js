@@ -1,36 +1,59 @@
-// function openPostPage(temp) {
-//   console.log(`${temp}`);
-// }
+import axios from "axios";
+const classNameTitlePost = "head-article--title";
+const classNameSubtitlePost = "head-article--subtitle";
+const classNameLogo = "head-article--logo";
+const classNameArticleImg = "content--article__img";
+const classNameCompanyName = "head-article--companyName";
+const classNameHeader = "article__header__title";
 
 
+function PostId() {
+  axios
+    .get("http://localhost:8000/api/cases/postCase", {
+      headers: {
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+        Pragma: "no-cache",
+        Expires: "0",
+      },
+    })
+    .then((response) => {
+      findActivePost(response.data);
+    })
+    .catch((error) => {
+      console.error("POST Error:", error);
+    });
 
-// import infoForReviews from "../reviews/reviews.json";
+  let findActivePost = (data) => {
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].active === true) {
+        newInfoPost(data[i]);
+      }
+    }
+  };
 
-// const classNameSlideLink = "slide__item__link";
-// const classNameTitlePost = "head-article--title";
-// const classNameSubtitlePost = "head-article--subtitle";
-// const classNameLogo = "head-article--logo";
+  let newInfoPost = (data) => {
+    document.querySelector(`.${classNameTitlePost}`).innerText = data.titlePost;
+    document.querySelector(`.${classNameHeader}`).innerText = data.titlePost;
+    document.querySelector(`.${classNameLogo}`).src = data.logoUrl;
+    document.querySelector(`.${classNameSubtitlePost}`).innerText =
+      data.subtitlePost;
+    document.querySelector(`.${classNameArticleImg}`).src = data.photoText;
+    document.querySelector(`.${classNameCompanyName}`).innerText =
+      data.nameCompany;
+    wrappedText(data.textPost);
+  };
 
-// export function PostId() {
-//   let slideLink = document.querySelectorAll(`.${classNameSlideLink}`);
-
-//   Array.from(slideLink).forEach((el) => {
-//     el.addEventListener("click", handlerSlideLinkClick);
-//   });
-
-//   function handlerSlideLinkClick(event) {
-//     const targetElement = event.target;
-//     const dataValue = targetElement.dataset.card;
-//     let TitlePost = document.querySelector(`.${classNameTitlePost}`);
-//     TitlePost.innerText = "Привет";
-//     // console.log(dataValue);
-//     // addNewText(classNameTitlePost, dataValue);
-//   }
-
-//   //   function addNewText(classNameStr, id) {
-//   //     document.querySelector(
-//   //       `.${classNameStr}`
-//   //     ).textContent = `${infoForReviews[id].titlePost}`;
-//   //     // console.log(infoForReviews[id].titlePost)
-//   //   }
-// }
+  let wrappedText = (text) => {
+    let test = document.querySelector(`.${classNameArticleImg}`);
+    return text
+      .split("\n")
+      .filter((v) => v.trim())
+      .map((content) => {
+        test.insertAdjacentHTML(
+          "afterend",
+          `<p class="content--article__text">${content.trim()}</p>`
+        );
+      });
+  };
+}
+PostId();

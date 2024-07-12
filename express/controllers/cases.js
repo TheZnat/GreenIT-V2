@@ -57,6 +57,8 @@ const postCase = async (req, res) => {
     "subtitlePost",
     "textPost",
     "photoText",
+    "nameCompany",
+    "logoUrl",
   ];
   const filteredData = filterFields(DB.infCompanies, fields);
   res.json(filteredData);
@@ -95,7 +97,7 @@ const active = async (req, res) => {
         fs.writeJson(DATA_FILE, DB, (err) => {
           if (err) return console.error(err);
         });
-        res.status(200).json({ message: 'POST запрос выполнен успешно'});
+        res.status(200).json({ message: "POST запрос выполнен успешно" });
       } catch (err) {
         console.error("Error writing to file:", err); // Исправлено здесь
         res.status(500).json({ error: "Ошибка при обновлении файла данных" });

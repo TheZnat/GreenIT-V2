@@ -47,12 +47,18 @@ export function addSlider(type) {
                 <img src="/images/Cases-logo/PD.svg" alt="ProfilDoors" class="slide__item__img--iconLogo"
                   loading="lazy">
                 <p class="slide__item__title">Интеграция Битрикс</p>
+                 <a href="./src/post/post.html">
+                    <button class="bth--resetting-styles slide__item__link" value="0">Подробнее </button>
+                  </a>
               </div>
             </div>
             <div class="gallery-slide">
               <div class="slide">
                 <img src="/images/Cases-logo/Warmet.svg" alt="Warmet" class="slide__item__img--iconLogo" loading="lazy">
                 <p class="slide__item__title">Системное администрирование</p>
+               <a href="./src/post/post.html">
+                  <button class="bth--resetting-styles slide__item__link" value="1">Подробнее</button>
+                </a>
               </div>
             </div>
             <div class="gallery-slide">
