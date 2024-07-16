@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const classNameSlideLink = "slide__item__link";
 
 export function findPostId() {
@@ -27,6 +26,6 @@ export function findPostId() {
     const targetElement = event.target;
     const dataValue = targetElement.value;
     await sendDataFindPos(dataValue);
-
+    window.location.href = "./src/post/post.html";
   }
 }

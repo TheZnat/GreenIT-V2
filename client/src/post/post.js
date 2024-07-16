@@ -8,6 +8,8 @@ const classNameHeader = "article__header__title";
 import { switchPost } from "./switchPost";
 import { exitBth } from "./exit";
 
+document.addEventListener('DOMContentLoaded', PostId);
+
 export function PostId() {
   async function sendDataPostCase() {
     try {
@@ -64,4 +66,4 @@ export function PostId() {
   };
   sendDataPostCase();
 }
-PostId();
+

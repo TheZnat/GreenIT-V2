@@ -1,5 +1,4 @@
 import axios from "axios";
-import { PostId } from "./post";
 const classNameArrowsPrevious = "arrows-previous";
 const classNameArrowsNext = "arrows-next";
 
@@ -32,8 +31,10 @@ export function switchPost(data, indexActive) {
   }
 
   async function switchPostNext() {
-    await sendData(indexActive + 1);
-    location.reload();
+    if (data.length != indexActive + 1) {
+      await sendData(indexActive + 1);
+      location.reload();
+    }
   }
 
   async function switchPostPrevious() {
