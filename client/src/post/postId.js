@@ -1,4 +1,5 @@
 import axios from "axios";
+
 const classNameSlideLink = "slide__item__link";
 
 export function findPostId() {
@@ -8,23 +9,24 @@ export function findPostId() {
     el.addEventListener("click", handlerSlideLinkClick);
   });
 
-  function handlerSlideLinkClick(event) {
-    const targetElement = event.target;
-    const dataValue = targetElement.value;
-
-    axios
-      .post(`http://localhost:8000/api/cases/active/${dataValue}`, {
+  async function sendDataFindPos(data) {
+    try {
+      await axios.post(`http://localhost:8000/api/cases/active/${data}`, {
         headers: {
           "Cache-Control": "no-cache, no-store, must-revalidate",
           Pragma: "no-cache",
           Expires: "0",
         },
-      })
-      .then((response) => {
-        console.log("POST Response:", response.data);
-      })
-      .catch((error) => {
-        console.error("POST Error:", error);
       });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async function handlerSlideLinkClick(event) {
+    const targetElement = event.target;
+    const dataValue = targetElement.value;
+    await sendDataFindPos(dataValue);
+
   }
 }

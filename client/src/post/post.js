@@ -5,30 +5,37 @@ const classNameLogo = "head-article--logo";
 const classNameArticleImg = "content--article__img";
 const classNameCompanyName = "head-article--companyName";
 const classNameHeader = "article__header__title";
+import { switchPost } from "./switchPost";
+import { exitBth } from "./exit";
 
-
-function PostId() {
-  axios
-    .get("http://localhost:8000/api/cases/postCase", {
-      headers: {
-        "Cache-Control": "no-cache, no-store, must-revalidate",
-        Pragma: "no-cache",
-        Expires: "0",
-      },
-    })
-    .then((response) => {
-      findActivePost(response.data);
-    })
-    .catch((error) => {
-      console.error("POST Error:", error);
-    });
+export function PostId() {
+  async function sendDataPostCase() {
+    try {
+      const dataGet = await axios.get(
+        "http://localhost:8000/api/cases/postCase",
+        {
+          headers: {
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            Pragma: "no-cache",
+            Expires: "0",
+          },
+        }
+      );
+      const data = await dataGet.data;
+      findActivePost(data);
+    } catch (e) {
+      console.error(e);
+    }
+  }
 
   let findActivePost = (data) => {
     for (let i = 0; i < data.length; i++) {
       if (data[i].active === true) {
         newInfoPost(data[i]);
+        switchPost(data, i);
       }
     }
+    exitBth();
   };
 
   let newInfoPost = (data) => {
@@ -55,5 +62,6 @@ function PostId() {
         );
       });
   };
+  sendDataPostCase();
 }
 PostId();

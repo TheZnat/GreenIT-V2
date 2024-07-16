@@ -99,7 +99,7 @@ const active = async (req, res) => {
         });
         res.status(200).json({ message: "POST запрос выполнен успешно" });
       } catch (err) {
-        console.error("Error writing to file:", err); // Исправлено здесь
+        console.error("Error writing to file:", err);
         res.status(500).json({ error: "Ошибка при обновлении файла данных" });
       }
     } else {
@@ -111,8 +111,39 @@ const active = async (req, res) => {
   }
 };
 
+/**
+ * @swagger
+ * /api/cases/exit:
+ *  get:
+ *    summary: exit
+ *    description: exit
+ *    tags:
+ *     - Review
+ *    responses:
+ *       "200":
+ *          description: exit fetched successfully
+ *       "400":
+ *          description: Unable to fetched exit
+ */
+
+const exit = async (req, res) => {
+  try {
+    for (let i = 0; i < DB.infCompanies.length; i++) {
+      DB.infCompanies[i].active = false;
+    }
+    fs.writeJson(DATA_FILE, DB, (err) => {
+      if (err) return console.error(err);
+    });
+    res.status(200).json({ message: "POST запрос выполнен успешно" });
+  } catch (err) {
+    console.error("Error writing to file:", err);
+    res.status(500).json({ error: "Ошибка при обновлении файла данных" });
+  }
+};
+
 module.exports = {
   reviews,
   postCase,
   active,
+  exit,
 };
