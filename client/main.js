@@ -1,8 +1,9 @@
 import "swiper/css/bundle";
+import axios from "axios";
 import { addSlider } from "./src/slider/addSlider.js";
 import { switchReviews } from "./src/reviews/reviews.js";
 import { findPostId } from "./src/post/postId.js";
-// import {openPostPage} from "./src/post/post.js";
+import { clear } from "./src/post/clearInfoPost";
 
 if (navigator.platform.match(/iPhone|iPod|iPad/)) {
   addSlider("ios");
@@ -29,6 +30,20 @@ if (navigator.platform.match(/iPhone|iPod|iPad/)) {
   const { Gallery } = await import("./src/slider/sliderClass.js");
   new Gallery(document.getElementById("gallery"));
 }
+
+window.addEventListener("load", async () => {
+  try {
+    const dataGet = await axios.get("http://localhost:8000/api/cases/exit", {
+      headers: {
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+        Pragma: "no-cache",
+        Expires: "0",
+      },
+    });
+  } catch (e) {
+    console.error(e);
+  }
+});
 
 findPostId();
 

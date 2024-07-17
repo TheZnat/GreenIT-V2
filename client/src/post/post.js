@@ -8,7 +8,7 @@ const classNameHeader = "article__header__title";
 import { switchPost } from "./switchPost";
 import { exitBth } from "./exit";
 
-document.addEventListener('DOMContentLoaded', PostId);
+window.addEventListener("DOMContentLoaded", PostId);
 
 export function PostId() {
   async function sendDataPostCase() {
@@ -30,6 +30,8 @@ export function PostId() {
     }
   }
 
+  sendDataPostCase();
+
   let findActivePost = (data) => {
     for (let i = 0; i < data.length; i++) {
       if (data[i].active === true) {
@@ -40,7 +42,7 @@ export function PostId() {
     exitBth();
   };
 
-  let newInfoPost = (data) => {
+  function newInfoPost(data) {
     document.querySelector(`.${classNameTitlePost}`).innerText = data.titlePost;
     document.querySelector(`.${classNameHeader}`).innerText = data.titlePost;
     document.querySelector(`.${classNameLogo}`).src = data.logoUrl;
@@ -50,9 +52,9 @@ export function PostId() {
     document.querySelector(`.${classNameCompanyName}`).innerText =
       data.nameCompany;
     wrappedText(data.textPost);
-  };
+  }
 
-  let wrappedText = (text) => {
+  function wrappedText(text) {
     let test = document.querySelector(`.${classNameArticleImg}`);
     return text
       .split("\n")
@@ -63,7 +65,5 @@ export function PostId() {
           `<p class="content--article__text">${content.trim()}</p>`
         );
       });
-  };
-  sendDataPostCase();
+  }
 }
-
