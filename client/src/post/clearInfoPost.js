@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export function clear() {
-  document.addEventListener("load", async () => {
+  window.addEventListener("load", async () => {
     try {
       const dataGet = await axios.get("http://localhost:8000/api/cases/exit", {
         headers: {

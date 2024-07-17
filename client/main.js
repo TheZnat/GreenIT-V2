@@ -5,6 +5,8 @@ import { switchReviews } from "./src/reviews/reviews.js";
 import { findPostId } from "./src/post/postId.js";
 import { clear } from "./src/post/clearInfoPost";
 
+
+clear();
 if (navigator.platform.match(/iPhone|iPod|iPad/)) {
   addSlider("ios");
   import("./src/slider/sliderIos.css");
@@ -31,19 +33,21 @@ if (navigator.platform.match(/iPhone|iPod|iPad/)) {
   new Gallery(document.getElementById("gallery"));
 }
 
-window.addEventListener("load", async () => {
-  try {
-    const dataGet = await axios.get("http://localhost:8000/api/cases/exit", {
-      headers: {
-        "Cache-Control": "no-cache, no-store, must-revalidate",
-        Pragma: "no-cache",
-        Expires: "0",
-      },
-    });
-  } catch (e) {
-    console.error(e);
-  }
-});
+// window.addEventListener("load", async () => {
+//   try {
+//     const dataGet = await axios.get("http://localhost:8000/api/cases/exit", {
+//       headers: {
+//         "Cache-Control": "no-cache, no-store, must-revalidate",
+//         Pragma: "no-cache",
+//         Expires: "0",
+//       },
+//     });
+//   } catch (e) {
+//     console.error(e);
+//   }
+// });
+
+
 
 findPostId();
 
