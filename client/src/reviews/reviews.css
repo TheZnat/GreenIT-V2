@@ -32,6 +32,13 @@
   cursor: pointer;
 }
 
+.reviews--icon-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .reviews__text--author {
   margin-top: 34px;
 }
@@ -42,8 +49,7 @@
 }
 
 .reviews--icon:hover {
-  border: 1.6px solid #00bb50;
-  box-shadow: 3px 2px 22px 1px rgba(62, 250, 143, 0.476);
+  box-shadow: 3px 2px 22px 2px rgba(62, 250, 143, 0.476);
   box-sizing: border-box;
 }
 

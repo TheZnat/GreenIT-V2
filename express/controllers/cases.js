@@ -30,7 +30,7 @@ const filterFields = (data, fields) => {
  *          description: Unable to fetched review
  */
 const reviews = async (req, res) => {
-  const fields = ["author", "position", "textRev", "logoUrl"];
+  const fields = ["author", "position", "textRev", "logoUrl", "iconUrl"];
   const filteredData = filterFields(DB.infCompanies, fields);
   res.json(filteredData);
 };
