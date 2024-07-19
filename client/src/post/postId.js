@@ -28,4 +28,8 @@ export function findPostId() {
     await sendDataFindPos(dataValue);
     window.location.href = "./src/post/post.html";
   }
+
+  Array.from(slideLink).forEach((el) => {
+    el.addEventListener("click", handlerSlideLinkClick);
+  });
 }

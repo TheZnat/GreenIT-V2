@@ -15,12 +15,12 @@ export class Gallery {
     this.gapSize = Number(
       window.getComputedStyle(this.lineNode).gap.replace(/\px/g, "")
     );
-    this.slideSize = this.containerNode.querySelector(
+    this.slideNode = this.containerNode.querySelector(
       `.${GalleryOneSlideClassName}`
     );
 
     this.size = this.lineNode.childElementCount;
-    this.slideNode = Array.from(this.lineNode.children);
+    this.slideNodes = Array.from(this.lineNode.children);
 
     this.setParameters = this.setParameters.bind(this);
     this.setEvents = this.setEvents.bind(this);
@@ -34,16 +34,14 @@ export class Gallery {
     this.setEvents();
   }
 
-  // функции
-
   setParameters() {
-    this.coordsContainer = this.slideSize.getBoundingClientRect();
+    this.coordsContainer = this.slideNode.getBoundingClientRect();
     this.width = this.coordsContainer.width;
     this.maximumX = -(this.size - 1) * (this.width + this.gapSize);
     this.x = -this.currentSlide * (this.width + this.gapSize);
     this.lineNode.style.width = `${(this.width + this.gapSize) * this.size}px`;
 
-    this.slideNode.forEach((slide) => {
+    this.slideNodes.forEach((slide) => {
       slide.style.width = `${this.width}px`;
     });
   }
@@ -108,15 +106,30 @@ export class Gallery {
   }
 
   setStylePositions() {
-    this.lineNode.style.transform = `translate3d(${this.x}px, 0, 0)`;
+    const translate = `translate(${this.x}px, 0)`;
+    this.lineNode.style.transform = translate;
+    this.lineNode.style.webkitTransform = translate; // Для Safari и старых версий Chrome и Android браузеров
+    this.lineNode.style.mozTransform = translate; // Для старых версий Firefox
+    this.lineNode.style.msTransform = translate; // Для старых версий Internet Explorer
+    this.lineNode.style.oTransform = translate;
   }
 
   setStyleTransition() {
-    this.lineNode.style.transition = `all 0.5s ease 0s`;
+    let transitionValue = "all 0.5s ease 0s";
+    this.lineNode.style.transition = transitionValue;
+    this.lineNode.style.webkitTransition = transitionValue; // Для Safari и старых версий Chrome и Android браузеров
+    this.lineNode.style.mozTransition = transitionValue; // Для старых версий Firefox
+    this.lineNode.style.msTransition = transitionValue; // Для старых версий Internet Explorer
+    this.lineNode.style.oTransition = transitionValue; // Для старых версий Opera
   }
 
   resetStyleTransition() {
-    this.lineNode.style.transition = `all 0 ease 0s`;
+    let transitionResetValue = "all 0 ease 0s";
+    this.lineNode.style.transition = transitionResetValue;
+    this.lineNode.style.webkitTransition = transitionResetValue; // Для Safari и старых версий Chrome и Android браузеров
+    this.lineNode.style.mozTransition = transitionResetValue; // Для старых версий Firefox
+    this.lineNode.style.msTransition = transitionResetValue; // Для старых версий Internet Explorer
+    this.lineNode.style.oTransition = transitionResetValue; // Для старых версий Opera
   }
 }
 
