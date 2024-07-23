@@ -8,7 +8,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        file: resolve(__dirname, "index.html"),
+        main: resolve(__dirname, "index.html"),
+        post: resolve(__dirname, "./src/post/post.html"),
       },
     },
   },

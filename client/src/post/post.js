@@ -8,7 +8,7 @@ const classNameHeader = "article__header__title";
 import { switchPost } from "./switchPost";
 import { exitBth } from "./exit";
 
-window.addEventListener("DOMContentLoaded", PostId);
+// window.addEventListener("DOMContentLoaded", PostId);
 
 export function PostId() {
   async function sendDataPostCase() {
