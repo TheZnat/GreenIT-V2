@@ -53,11 +53,6 @@
     margin-top: 76px;
     padding-bottom: 440px;
   }
-
-  .reviews--icon {
-    width: 50px;
-    height: 50px;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -330,7 +325,7 @@
     align-items: center;
   }
   .reviews__area--choice__icon {
-    margin-bottom: 19px;
+    margin-bottom: 22px;
   }
   .reviews__area--choice__logo {
     display: none;

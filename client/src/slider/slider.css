@@ -112,6 +112,7 @@
   font-weight: 600;
   font-size: 15px;
   color: #374150;
+  pointer-events: auto;
 }
 
 .bth--resetting-styles {
