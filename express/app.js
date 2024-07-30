@@ -38,6 +38,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/api/cases", require("./routes/cases"));
 
 // catch 404 and forward to error handler
+// http://localhost:8000/api-docs/
 app.use(function (req, res, next) {
   next(createError(404));
 });

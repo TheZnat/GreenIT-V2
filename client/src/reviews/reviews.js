@@ -6,6 +6,21 @@ const classNameReviewsIcon = "reviews--icon-img";
 export function switchReviews(dataReviews) {
   let textFroReviews = document.querySelector(`.${textFroReviewsClass}`);
   let swipeLogo = document.querySelector(`.${swipeLogoClass}`);
+  const logoUrlArray = [
+    "/images/Review/ReviewIconF.svg",
+    "/images/Review/ReviewIconS.svg",
+    "/images/Review/ReviewIconFour.svg",
+    "/images/Review/ReviewIconT.svg",
+  ];
+
+  function findFirstLetter(index, data) {
+    for (let i = index; i < data.length; i++) {
+      if (data[i].id === index) {
+        let result = data[i].author.substring(0, 1);
+        return result;
+      }
+    }
+  }
 
   // Проверяем, что данные загружены
   if (dataReviews && dataReviews.length > 0) {
@@ -13,10 +28,12 @@ export function switchReviews(dataReviews) {
 
     Array.from(document.querySelectorAll(`.${allIconsClass}`)).forEach(
       (el, index) => {
-        let imgElement = el.querySelector(`.${classNameReviewsIcon}`);
-        if (imgElement) {
-          imgElement.src = dataReviews[index].iconUrl;
-        }
+        el.style.backgroundImage = `url(${logoUrlArray[index]})`;
+
+        el.innerHTML = `<div class="iconText" data-id="${index}">${findFirstLetter(
+          index,
+          dataReviews
+        ).toUpperCase()}</div>`;
         el.addEventListener("click", handlerSwitchClick);
       }
     );

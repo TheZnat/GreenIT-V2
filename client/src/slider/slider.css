@@ -84,27 +84,13 @@
   object-fit: contain;
 }
 
-/* .slide__item__img--pd {
-  width: 163px;
-  height: 72px;
-  object-fit: contain;
-}
-
-.slide__item__img--wm {
-  width: 180px;
-  height: 85px;
-} */
-
-/* .slide__item__img--rada {
-  width: 180px;
-  height: 85px;
-} */
-
 .slide__item__title {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 24px;
   color: #000;
+  overflow-wrap: break-word;
+  padding-right: 5px;
 }
 
 .slide__item__link {
