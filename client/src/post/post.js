@@ -44,7 +44,6 @@ export function PostId() {
 
   function newInfoPost(data) {
     document.querySelector(`.${classNameTitlePost}`).innerText = data.titlePost;
-    document.querySelector(`.${classNameHeader}`).innerText = data.titlePost;
     document.querySelector(`.${classNameLogo}`).src = data.logoUrl;
     document.querySelector(`.${classNameSubtitlePost}`).innerText =
       data.subtitlePost;

@@ -16,7 +16,7 @@ export function switchReviews(dataReviews) {
   function findFirstLetter(index, data) {
     for (let i = index; i < data.length; i++) {
       if (data[i].id === index) {
-        let result = data[i].author.substring(0, 1);
+        let result = data[i].nameCompany.substring(0, 1);
         return result;
       }
     }
@@ -29,7 +29,6 @@ export function switchReviews(dataReviews) {
     Array.from(document.querySelectorAll(`.${allIconsClass}`)).forEach(
       (el, index) => {
         el.style.backgroundImage = `url(${logoUrlArray[index]})`;
-
         el.innerHTML = `<div class="iconText" data-id="${index}">${findFirstLetter(
           index,
           dataReviews

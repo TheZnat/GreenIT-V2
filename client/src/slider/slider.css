@@ -105,6 +105,25 @@
   background: none;
   border: none;
   cursor: pointer;
-  width: 20px;
+  width: 82px;
   height: 20px;
+}
+
+.slide__item__link:active {
+  transform: scale(1.1);
+}
+
+.slide__item__link:after {
+  background-color: #00bb50; /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.slide__item__link:hover:after,
+.slide__item__link:focus:after {
+  width: 100%;
 }

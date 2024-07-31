@@ -38,14 +38,10 @@ body {
 .article__header__bthArea {
   width: 824px;
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-
-  /* width: 800px;
-  display: flex;
   justify-content: space-between;
-  padding-right: 27px;
-  padding-left: 27px; */
+  align-items: center;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .bth--resetting-styles {
@@ -56,27 +52,23 @@ body {
   height: 20px;
 }
 
+.svg-element:hover {
+  box-shadow: 3px 2px 22px 2px rgba(62, 250, 143, 0.476);
+  box-sizing: border-box;
+}
+
+.bth--resetting-styles:active {
+  transform: scale(1.2);
+}
 
 .exitBth {
   stroke-width: 1.7px;
   stroke: #000;
 }
 
-.area-arrows {
-}
-
-.arrows-previous {
-  
-}
-
-.arrows-next {
-}
-
-.article__header__title {
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 16px;
-  color: #1e1e1e;
+.logo {
+  width: 117px;
+  height: 46px;
 }
 
 .article {
@@ -111,6 +103,7 @@ body {
   width: 163px;
   height: 72px;
   margin-bottom: 21px;
+  object-fit: contain;
 }
 
 .head-article--title {
@@ -120,7 +113,6 @@ body {
   font-size: 48px;
   color: #1e1e1e;
 }
-
 
 .head-article--companyName {
   font-family: var(--font-family);
@@ -137,7 +129,8 @@ body {
   gap: 32px;
 }
 
-.content--article__text, .head-article--subtitle {
+.content--article__text,
+.head-article--subtitle {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;

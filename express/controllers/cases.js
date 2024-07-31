@@ -37,6 +37,7 @@ const reviews = async (req, res) => {
     "logoUrl",
     "id",
     "titlePost",
+    "nameCompany",
   ];
   const filteredData = filterFields(DB.infCompanies, fields);
   res.json(filteredData);
