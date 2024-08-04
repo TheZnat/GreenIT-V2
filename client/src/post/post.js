@@ -4,7 +4,6 @@ const classNameSubtitlePost = "head-article--subtitle";
 const classNameLogo = "head-article--logo";
 const classNameArticleImg = "content--article__img";
 const classNameCompanyName = "head-article--companyName";
-const classNameHeader = "article__header__title";
 import { switchPost } from "./switchPost";
 import { exitBth } from "./exit";
 
