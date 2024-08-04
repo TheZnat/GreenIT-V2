@@ -8,7 +8,7 @@ const swaggerJsdoc = require("swagger-jsdoc");
 const cors = require('cors');
 require("dotenv").config();
 
-// const PORT = process.env.PORT
+
 
 const app = express();
 // url swagger: http://localhost:8000/api-docs

@@ -1,4 +1,5 @@
 import axios from "axios";
+import { PREFIX } from "../helper/Api";
 const classNameSlideLink = "slide__item__link";
 
 export function findPostId() {
@@ -10,7 +11,7 @@ export function findPostId() {
 
   async function sendDataFindPos(data) {
     try {
-      await axios.post(`http://localhost:8000/api/cases/active/${data}`, {
+      await axios.post(`${PREFIX}/active/${data}`, {
         headers: {
           "Cache-Control": "no-cache, no-store, must-revalidate",
           Pragma: "no-cache",

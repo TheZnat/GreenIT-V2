@@ -6,22 +6,18 @@ const classNameArticleImg = "content--article__img";
 const classNameCompanyName = "head-article--companyName";
 import { switchPost } from "./switchPost";
 import { exitBth } from "./exit";
-
-// window.addEventListener("DOMContentLoaded", PostId);
+import { PREFIX } from "../helper/Api";
 
 export function PostId() {
   async function sendDataPostCase() {
     try {
-      const dataGet = await axios.get(
-        "http://localhost:8000/api/cases/postCase",
-        {
-          headers: {
-            "Cache-Control": "no-cache, no-store, must-revalidate",
-            Pragma: "no-cache",
-            Expires: "0",
-          },
-        }
-      );
+      const dataGet = await axios.get(`${PREFIX}/postCase`, {
+        headers: {
+          "Cache-Control": "no-cache, no-store, must-revalidate",
+          Pragma: "no-cache",
+          Expires: "0",
+        },
+      });
       const data = await dataGet.data;
       findActivePost(data);
     } catch (e) {

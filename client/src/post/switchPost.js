@@ -1,4 +1,5 @@
 import axios from "axios";
+import { PREFIX } from "../helper/Api";
 const classNameArrowsPrevious = "arrows-previous";
 const classNameArrowsNext = "arrows-next";
 
@@ -15,16 +16,13 @@ export function switchPost(data, indexActive) {
 
   async function sendData(indexActive) {
     try {
-      await axios.post(
-        `http://localhost:8000/api/cases/active/${indexActive}`,
-        {
-          headers: {
-            "Cache-Control": "no-cache, no-store, must-revalidate",
-            Pragma: "no-cache",
-            Expires: "0",
-          },
-        }
-      );
+      await axios.post(`${PREFIX}/active/${indexActive}`, {
+        headers: {
+          "Cache-Control": "no-cache, no-store, must-revalidate",
+          Pragma: "no-cache",
+          Expires: "0",
+        },
+      });
     } catch (error) {
       console.error("POST Error:", error);
     }

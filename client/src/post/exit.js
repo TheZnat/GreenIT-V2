@@ -1,4 +1,3 @@
-import axios from "axios";
 const classNameExitBth = "exitBth";
 
 export function exitBth() {

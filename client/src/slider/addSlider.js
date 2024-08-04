@@ -1,6 +1,7 @@
 import axios from "axios";
 import { switchReviews } from "../reviews/reviews";
 import { findPostId } from "../post/postId";
+import {PREFIX} from "../helper/Api";
 
 export function addSlider() {
   let dataReviews;
@@ -84,9 +85,7 @@ export function addSlider() {
 
   async function addDataForSlider() {
     try {
-      const dataGet = await axios.get(
-        "http://localhost:8000/api/cases/reviews"
-      );
+      const dataGet = await axios.get(`${PREFIX}/reviews`);
       dataReviews = dataGet.data;
       addSliderJson(dataReviews);
       switchReviews(dataReviews);
