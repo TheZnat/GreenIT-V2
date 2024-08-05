@@ -1,7 +1,7 @@
 import axios from "axios";
 import { switchReviews } from "../reviews/reviews";
 import { findPostId } from "../post/postId";
-import {PREFIX} from "../helper/Api";
+import { PREFIX } from "../helper/Api";
 
 export function addSlider() {
   let dataReviews;
@@ -31,7 +31,9 @@ export function addSlider() {
       </div>
       <div class="swiper-pagination"></div>
     `;
-      document.querySelector(".test").append(mySwiper);
+      let temp = document.querySelector(".test");
+      temp.append(mySwiper);
+      temp.style.marginLeft = "-12px";
       findPostId();
       import("./sliderIos.css");
 
