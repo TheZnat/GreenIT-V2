@@ -315,7 +315,8 @@ img {
 }
 
 .info__card__item__link:hover {
-  color: #dddcdc;
+  color: #ffffff;
+  box-shadow: 3px 2px 22px 2px rgba(62, 250, 143, 0.476);
 }
 
 .info__card__item__link:active {
@@ -371,17 +372,6 @@ img {
 
 .second-row {
   height: 183.14px;
-}
-
-.arrow {
-  display: inline-block;
-  cursor: pointer;
-  width: 6.38px;
-  height: 6.38px;
-  border-top: 2px solid #00bb50;
-  border-right: 2px solid #00bb50;
-  transform: rotate(45deg);
-  border-radius: 1px;
 }
 
 .title--area {

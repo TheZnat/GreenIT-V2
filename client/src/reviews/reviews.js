@@ -42,6 +42,7 @@ export function switchReviews(dataReviews) {
 
   function addTextFroReviews(data, index) {
     textFroReviews.innerHTML = `
+     <p class="text--nameCompany">${data[index].nameCompany}</p>
       <p class="animate__text-reviews animate__reviews--text">${data[index].textRev}</p>
       <div class="reviews__text--author animate__reviews--subtitle">
         <p class="text--author">${data[index].author}</p>

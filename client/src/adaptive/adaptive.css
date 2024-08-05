@@ -331,6 +331,10 @@
     display: none;
   }
 
+  .text--nameCompany {
+    display: block;
+  }
+
   .animate__reviews--text {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
@@ -435,6 +439,10 @@
   .case {
     padding-bottom: 75px;
   }
+
+  .reviews__text {
+    color: #6a717c;
+  }
 }
 
 @media screen and (max-width: 428px) {
@@ -478,6 +486,15 @@
   .slide {
     width: 285px;
     height: 204px;
+  }
+
+  .text--nameCompany {
+    margin-bottom: 12px;
+    font-size: 32px;
+  }
+
+  .reviews__text {
+    font-size: 14px;
   }
 
   .test {

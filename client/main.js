@@ -7,3 +7,6 @@ clear();
 window.addEventListener("DOMContentLoaded", () => {
   addSlider();
 });
+
+
+
