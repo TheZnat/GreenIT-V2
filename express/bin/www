@@ -20,8 +20,8 @@ app.set("port", port);
  * SSL options - загрузка ключа и сертификата
  */
 var options = {
-  key: fs.readFileSync("C:/Users/Administrator/key.pem"),
-  cert: fs.readFileSync("C:/Users/Administrator/cert.pem"),
+  key: fs.readFileSync("../certificate.key"),
+  cert: fs.readFileSync("../certificate.key"),
 };
 
 /**
