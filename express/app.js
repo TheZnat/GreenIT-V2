@@ -5,10 +5,8 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const swaggerUi = require("swagger-ui-express");
 const swaggerJsdoc = require("swagger-jsdoc");
-const cors = require('cors');
+const cors = require("cors");
 require("dotenv").config();
-
-
 
 const app = express();
 // url swagger: http://localhost:8000/api-docs
@@ -19,7 +17,7 @@ const swaggerOptions = {
       title: "GreenIt Express API with Swagger",
       version: "1.0.0",
       description: "Simple swagger documentation",
-      servers: ["http://localhost:8000"],
+      servers: [{ url: "http://89.104.68.151:8080" }],
     },
     schemes: ["http", "https"],
   },
@@ -27,9 +25,16 @@ const swaggerOptions = {
 };
 
 const swaggerDoc = swaggerJsdoc(swaggerOptions);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://znatmedia.ru", // Укажите домен вашего фронтенда
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: false, // Если вам нужно передавать cookie между доменами
+  })
+);
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -54,7 +59,5 @@ app.use(function (err, req, res, next) {
   res.render("error");
   // res.json({ error: err });
 });
-
-
 
 module.exports = app;
