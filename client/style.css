@@ -71,6 +71,11 @@ img {
   color: #000;
 }
 
+.header__link--bthPost {
+  background: none;
+  border: none;
+}
+
 .link-ease-in-out a {
   display: inline-block;
   line-height: 1;
