@@ -19,6 +19,7 @@
 }
 
 .info__card__textArea__title {
+  font-family: var(--second-family);
   font-size: 40px;
   font-weight: 400;
   line-height: 47px;
@@ -86,6 +87,7 @@
 }
 
 .statistics__inform__item__title {
+  font-family: var(--font-family);
   color: rgb(0, 187, 80);
   font-size: 114px;
   font-weight: 400;
@@ -94,6 +96,7 @@
 }
 
 .statistics__inform__item__subtitle {
+  font-family: var(--second-family);
   font-size: 26px;
   font-weight: 400;
   line-height: 30px;
@@ -166,18 +169,18 @@
 }
 
 .functional__card__textArea__title {
+  font-family: var(--second-family);
   font-size: 38px;
   font-weight: 500;
   line-height: 60px;
-  letter-spacing: 0%;
   text-align: left;
 }
 
 .functional__card__textArea__subtitle {
+  font-family: var(--font-family);
   font-size: 17px;
   font-weight: 500;
   line-height: 30px;
-  letter-spacing: 0%;
   text-align: left;
 }
 
@@ -199,11 +202,30 @@
   background: rgb(217, 217, 217);
 }
 
-.parent {
+.usefulLinks__bricks {
   display: grid;
   grid-template-columns: repeat(4, minmax(240px, 1fr));
   grid-template-rows: repeat(2, minmax(176px, 1fr));
   gap: 12px;
+}
+
+.usefulLinks__bricks__item {
+  position: relative;
+}
+
+.usefulLinks__bricks__item__title {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  font-family: var(--font-family);
+
+  color: rgb(255, 255, 255);
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .div1 {
@@ -248,4 +270,49 @@
   border-bottom-right-radius: 86px;
   grid-column-start: 4;
   grid-row-start: 2;
+}
+
+.usefulLinks__bricks__item__img--1 {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  /* width: 173.08px;
+  height: 140px; */
+}
+
+.usefulLinks__bricks__item__img--2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* width: 173.08px;
+  height: 140px; */
+}
+
+.usefulLinks__bricks__item__img--3 {
+  position: absolute;
+  left: 45px;
+  top: 0;
+  /* width: 173.08px;
+  height: 140px; */
+}
+
+.usefulLinks__bricks__item__img--4 {
+  width: 100%;
+}
+
+.usefulLinks__bricks__item__img--5 {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 91.83px;
+  height: 140.43px; */
+}
+
+.usefulLinks__bricks__item__img--6 {
+  /* width: 85.02px;
+  height: 106px; */
+  position: absolute;
+  left: 0;
+  top: 0;
 }
