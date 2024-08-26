@@ -81,9 +81,9 @@
 }
 
 .statistics__inform__item__img {
-  width: 96px;
-  height: 96px;
-  margin-bottom: 50px;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 32px;
 }
 
 .statistics__inform__item__title {
@@ -276,6 +276,7 @@
   position: absolute;
   bottom: 16px;
   right: 16px;
+
   /* width: 173.08px;
   height: 140px; */
 }
@@ -315,4 +316,31 @@
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.slide__item__link {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  color: #374150;
+  pointer-events: auto;
+}
+
+.slide__item__link:active {
+  transform: scale(1.1);
+}
+
+.slide__item__link:after {
+  background-color: #00bb50; /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 2px; /* Высота линии */
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.slide__item__link:hover:after,
+.slide__item__link:focus:after {
+  width: 100%;
 }
