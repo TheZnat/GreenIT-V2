@@ -1,47 +1,27 @@
 # GreenIT
 
-Сайт для компании, оказывающий услуги маркетинга и администрирования.
+## Порт для работы с API
 
-Ссылка на сайт [Готовый проект](https://spb-git.ru)
+express -> файл .env -> переменная PORT = 8000
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/platane/platane/main.yml?label=action&style=flat-square)
+## Порт для пработы Swagger
 
-## Содержание
+express -> app.js -> servers: ["http://localhost:8000"],
 
-- [Технологии](#технологии)
-- [Начало работы](#начало-работы)
-- [Статус проекта](#статус-проекта)
+## Скачивание
 
-## Технологии
+git clone -b backendV2 https://github.com/TheZnat/GreenIT-V2
 
-- [js](https://262.ecma-international.org/)
-- [vite](https://vite-docs-ru.vercel.app/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Next.js](https://nextjs-ru.vercel.app/)
-- [swagger](https://docs.swagger.io/spec.html)
-- [express](https://expressjs.com/ru/)
+## Установка
 
-## Начало работы
+```sh
+npm i
+```
 
-### Запуск Development сервера
+### Запуск
 
 Чтобы запустить сервер для разработки, выполните команду:
 
 ```sh
 npm start
 ```
-
-### Создание билда
-
-Чтобы выполнить production сборку, выполните команду:
-
-```sh
-npm run build
-```
-
-## Статус проекта
-
-- [x] [Верстка проекта](https://github.com/TheZnat/GreenIT) 
-- [x] Написание скриптов для работы со страницей на Vanilla js
-- [x] Написание beckend на Express.js
-- [ ] Перенос пректа на Next.js
