@@ -2,6 +2,7 @@ const GalleryClassName = "gallery";
 const GalleryLineClassName = "gallery-line";
 const GallerySlideClassName = "gallery-slide";
 const GalleryOneSlideClassName = "slide";
+import "../adaptive/sliderAndCaseAdaptive.css";
 
 export class Gallery {
   constructor(element) {

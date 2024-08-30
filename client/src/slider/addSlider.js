@@ -20,8 +20,7 @@ export function addSlider() {
                 <p class="slide__item__title">${data[i].titlePost}</p>
                 <button class="bth--resetting-styles slide__item__link" value="${i}">Подробнее</button>
               </div>
-            </div>
-      `;
+            </div>`;
       }
       const mySwiper = document.createElement("div");
       mySwiper.classList.add("swiper-container", "mySwiper");
@@ -64,8 +63,7 @@ export function addSlider() {
               <p class="slide__item__title">${data[i].titlePost}</p>
               <button class="bth--resetting-styles slide__item__link" value="${i}">Подробнее</button>
             </div>
-          </div>
-        `;
+          </div>`;
       }
       const caseCards = document.createElement("div");
       caseCards.classList.add("case__cards");

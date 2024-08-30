@@ -25,20 +25,6 @@
     column-gap: 17px;
   }
 
-  .case__subtitle {
-    width: 311px;
-    height: 62px;
-  }
-
-  .slide {
-    width: 462px;
-    height: 304px;
-  }
-
-  .gallery-line {
-    gap: 19px;
-  }
-
   .feedback-form {
     margin-top: 100px;
     width: 941px;
@@ -47,11 +33,6 @@
 
   .about {
     margin-top: 100px;
-  }
-
-  .case {
-    margin-top: 76px;
-    padding-bottom: 440px;
   }
 }
 
@@ -93,15 +74,6 @@
   .info__partners {
     gap: 28px;
     margin-top: 50px;
-  }
-
-  .slide {
-    width: 442px;
-    height: 291px;
-  }
-
-  .gallery-line {
-    gap: 15px;
   }
 
   .feedback-form {
@@ -192,19 +164,11 @@
     height: 27.25px;
   }
 
-  .slide {
-    width: 403px;
-    height: 265.35px;
-    pointer-events: none;
-  }
-
   .feedback-form {
     width: 818px;
     height: 440px;
   }
-  .case {
-    padding-bottom: 410px;
-  }
+
   .feedback-form {
     margin-top: 50px;
   }
@@ -237,47 +201,6 @@
 
   .about {
     align-items: center;
-  }
-
-  .case {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 120px;
-  }
-
-  .case__text-area {
-    flex-direction: column;
-    gap: 40px;
-  }
-  .test {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    margin-left: 50px;
-  }
-
-  .gallery-slide {
-    touch-action: none;
-  }
-
-  .case__cards {
-    width: 100vw;
-    position: relative;
-  }
-
-  .slide {
-    width: 350px;
-    height: 250px;
-  }
-  .slide__item__img--iconLogo {
-    width: 123px;
-    height: 58.08px;
-  }
-  .slide__item__title {
-    font-size: 16px;
   }
 
   .footer {
@@ -319,34 +242,8 @@
     align-items: center;
   }
 
-  .reviews__area {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .reviews__area--choice__icon {
-    margin-bottom: 22px;
-  }
-  .reviews__area--choice__logo {
-    display: none;
-  }
-
   .text--nameCompany {
     display: block;
-  }
-
-  .animate__reviews--text {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-  }
-
-  .animate__reviews--subtitle {
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 1.3s;
-    animation-duration: 1.3s;
-    animation-name: fadeIn;
   }
 }
 
@@ -380,9 +277,6 @@
     gap: 22px;
     margin-top: 34px;
   }
-  .reviews__area--text {
-    max-width: 400px;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -394,10 +288,7 @@
   .header__bth-area {
     display: none;
   }
-  .slide {
-    width: 308px;
-    height: 220px;
-  }
+
   .feedback-form__leftArea__text {
     display: none;
   }
@@ -432,16 +323,6 @@
   }
   .about {
     margin-top: 85px;
-  }
-  .case__cards {
-    top: 46px;
-  }
-  .case {
-    padding-bottom: 75px;
-  }
-
-  .reviews__text {
-    color: #6a717c;
   }
 }
 
@@ -483,31 +364,17 @@
   .info__text__subtitle--br {
     display: block;
   }
-  .slide {
-    width: 285px;
-    height: 204px;
-  }
 
   .text--nameCompany {
     margin-bottom: 12px;
     font-size: 32px;
   }
 
-  .reviews__text {
-    font-size: 14px;
-  }
-
   .test {
     margin-left: 25px;
   }
-  .gallery-line {
-    gap: 10px;
-  }
   .feedback-form {
     margin-top: 31px;
-  }
-  .reviews__area--text {
-    max-width: 315px;
   }
 }
 
@@ -518,25 +385,6 @@
   .info__card__item {
     width: 291px;
   }
-  .case__subtitle {
-    width: 291px;
-  }
-  .case__text-area {
-    gap: 30px;
-  }
-  .case__subtitle {
-    width: 258px;
-  }
-  .test {
-    margin-left: 20px;
-  }
-  .slide {
-    width: 266px;
-    height: 190px;
-  }
-  .gallery-line {
-    gap: 8px;
-  }
 }
 
 @media screen and (max-width: 320px) {
@@ -546,10 +394,5 @@
 
   .info__text__title {
     margin-bottom: 15px;
-  }
-
-  .slide {
-    width: 248px;
-    height: 176px;
   }
 }

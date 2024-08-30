@@ -1,0 +1,227 @@
+@media screen and (max-width: 1280px) {
+  :root {
+    --paragraph-size: 14px;
+    --title-size: 18px;
+    --mainTitle-size: 30px;
+    --linkText-size: 13px;
+  }
+
+  .case__subtitle {
+    width: 311px;
+    height: 62px;
+  }
+
+  .slide {
+    width: 462px;
+    height: 304px;
+  }
+
+  .gallery-line {
+    gap: 19px;
+  }
+
+  .case {
+    margin-top: 76px;
+    padding-bottom: 440px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slide {
+    width: 442px;
+    height: 291px;
+  }
+
+  .gallery-line {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  :root {
+    --paragraph-size: 13px;
+    --title-size: 17px;
+    --mainTitle-size: 28px;
+    --linkText-size: 12px;
+  }
+
+  .slide {
+    width: 403px;
+    height: 265.35px;
+    pointer-events: none;
+  }
+
+  .case {
+    padding-bottom: 410px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .about__title {
+    align-self: center;
+  }
+
+  .case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+  }
+
+  .case__text-area {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .test {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-left: 50px;
+  }
+
+  .gallery-slide {
+    touch-action: none;
+  }
+
+  .case__cards {
+    width: 100vw;
+    position: relative;
+  }
+
+  .slide {
+    width: 350px;
+    height: 250px;
+  }
+  .slide__item__img--iconLogo {
+    width: 123px;
+    height: 58.08px;
+  }
+  .slide__item__title {
+    font-size: 16px;
+  }
+
+  .about__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews__area {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews__area--choice__icon {
+    margin-bottom: 22px;
+  }
+  .reviews__area--choice__logo {
+    display: none;
+  }
+
+  .text--nameCompany {
+    display: block;
+  }
+
+  .animate__reviews--text {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+
+  .animate__reviews--subtitle {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    animation-name: fadeIn;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .reviews__area--text {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --paragraph-size: 12px;
+    --title-size: 15px;
+    --mainTitle-size: 26px;
+  }
+
+  .slide {
+    width: 308px;
+    height: 220px;
+  }
+
+  .case__cards {
+    top: 46px;
+  }
+  .case {
+    padding-bottom: 75px;
+  }
+
+  .reviews__text {
+    color: #6a717c;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .slide {
+    width: 285px;
+    height: 204px;
+  }
+
+  .text--nameCompany {
+    margin-bottom: 12px;
+    font-size: 32px;
+  }
+
+  .reviews__text {
+    font-size: 14px;
+  }
+
+  .test {
+    margin-left: 25px;
+  }
+  .gallery-line {
+    gap: 10px;
+  }
+
+  .reviews__area--text {
+    max-width: 315px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .case__subtitle {
+    width: 291px;
+  }
+  .case__text-area {
+    gap: 30px;
+  }
+  .case__subtitle {
+    width: 258px;
+  }
+  .test {
+    margin-left: 20px;
+  }
+  .slide {
+    width: 266px;
+    height: 190px;
+  }
+  .gallery-line {
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .slide {
+    width: 248px;
+    height: 176px;
+  }
+}
