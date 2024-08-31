@@ -1,47 +1,44 @@
 # GreenIT
 
-Сайт для компании, оказывающий услуги маркетинга и администрирования.
+## Скачивание
 
-Ссылка на сайт [Готовый проект](https://spb-git.ru)
+git clone -b FixFront https://github.com/TheZnat/GreenIT-V2
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/platane/platane/main.yml?label=action&style=flat-square)
+либо через интерфейс github:
 
-## Содержание
+code -> вкладка Local -> download zip
 
-- [Технологии](#технологии)
-- [Начало работы](#начало-работы)
-- [Статус проекта](#статус-проекта)
+## Изменения ссылки к API
 
-## Технологии
+client -> src -> helper -> Api.js -> export const PREFIX = "https://домен/api/cases"; 
 
-- [js](https://262.ecma-international.org/)
-- [vite](https://vite-docs-ru.vercel.app/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Next.js](https://nextjs-ru.vercel.app/)
-- [swagger](https://docs.swagger.io/spec.html)
-- [express](https://expressjs.com/ru/)
+сейчас домен: export const PREFIX = "https://spbgit.ru/api/cases";
 
-## Начало работы
-
-### Запуск Development сервера
-
-Чтобы запустить сервер для разработки, выполните команду:
+## Установка
 
 ```sh
-npm start
+npm i
 ```
 
-### Создание билда
-
-Чтобы выполнить production сборку, выполните команду:
+### Быстрый запуск для Дев режима
 
 ```sh
-npm run build
+npm dev
 ```
 
-## Статус проекта
+### Сборка проекта через vite для Деплоя 
 
-- [x] [Верстка проекта](https://github.com/TheZnat/GreenIT) 
-- [x] Написание скриптов для работы со страницей на Vanilla js
-- [x] Написание beckend на Express.js
-- [ ] Перенос пректа на Next.js
+```sh
+npm build
+```
+
+### Сборка проекта через vite для Деплоя и запуск в режиме Превью
+
+```sh
+npm preview
+```
+
+### После сборки проекта (npm build или npm preview)
+
+Собранный проект находится в папке client -> dist
+
