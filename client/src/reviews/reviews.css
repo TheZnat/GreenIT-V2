@@ -33,6 +33,7 @@
 
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .iconText {

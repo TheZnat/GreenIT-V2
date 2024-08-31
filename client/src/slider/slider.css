@@ -93,7 +93,7 @@
   padding-right: 5px;
 }
 
-.slide__item__link {
+.slide__item__link--main {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 15px;
@@ -108,12 +108,13 @@
   width: 82px;
   height: 20px;
 }
+/* замена slide__item__link на slide__item__link--main*/
 
-.slide__item__link:active {
+.slide__item__link--main:active {
   transform: scale(1.1);
 }
 
-.slide__item__link:after {
+.slide__item__link--main:after {
   background-color: #00bb50; /* Цвет линии при наведении на нее курсора мыши */
   display: block;
   content: "";
@@ -123,7 +124,7 @@
   -moz--transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
-.slide__item__link:hover:after,
-.slide__item__link:focus:after {
+.slide__item__link--main:hover:after,
+.slide__item__link--main:focus:after {
   width: 100%;
 }

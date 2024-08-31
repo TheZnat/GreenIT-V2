@@ -69,20 +69,28 @@ img {
   font-weight: 600;
   font-size: var(--linkText-size);
   color: #000;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header__link--bthPost {
   background: none;
   border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  /* width: 45px;
+  height: 20px; */
 }
 
-.link-ease-in-out a {
+.link-ease-in-out a,
+.header__link--bthPost {
   display: inline-block;
   line-height: 1;
   text-decoration: none; /* Убираем подчеркивание */
   cursor: pointer;
 }
-.link-ease-in-out a:after {
+.link-ease-in-out a:after,
+.header__link--bthPost:after {
   background-color: #00bb50; /* Цвет линии при наведении на нее курсора мыши */
   display: block;
   content: "";
@@ -93,7 +101,9 @@ img {
   transition: width 0.3s ease-in-out;
 }
 .link-ease-in-out a:hover:after,
-.link-ease-in-out a:focus:after {
+.link-ease-in-out a:focus:after,
+.header__link--bthPost:hover:after,
+.header__link--bthPost:focus:after {
   width: 100%;
 }
 

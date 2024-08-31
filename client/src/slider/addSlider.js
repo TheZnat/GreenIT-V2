@@ -18,7 +18,7 @@ export function addSlider() {
                 <img src="${data[i].logoUrl}" alt="логотип" class="slide__item__img--iconLogo"
                   loading="lazy">
                 <p class="slide__item__title">${data[i].titlePost}</p>
-                <button class="bth--resetting-styles slide__item__link" value="${i}">Подробнее</button>
+                <button class="bth--resetting-styles slide__item__link slide__item__link--main" value="${i}">Подробнее</button>
               </div>
             </div>`;
       }
@@ -61,7 +61,7 @@ export function addSlider() {
             <div class="slide">
               <img src="${data[i].logoUrl}" alt="логотип" class="slide__item__img--iconLogo" loading="lazy">
               <p class="slide__item__title">${data[i].titlePost}</p>
-              <button class="bth--resetting-styles slide__item__link" value="${i}">Подробнее</button>
+              <button class="bth--resetting-styles slide__item__link slide__item__link--main" value="${i}">Подробнее</button>
             </div>
           </div>`;
       }

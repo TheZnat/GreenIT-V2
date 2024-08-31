@@ -340,6 +340,7 @@
   -moz--transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
+
 .slide__item__link:hover:after,
 .slide__item__link:focus:after {
   width: 100%;

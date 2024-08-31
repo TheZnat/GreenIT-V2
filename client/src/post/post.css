@@ -50,6 +50,11 @@ body {
   cursor: pointer;
   width: 20px;
   height: 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.articleLinks {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .svg-element:hover {
