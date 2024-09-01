@@ -1,0 +1,93 @@
+@media screen and (max-width: 1280px) {
+  .info__card {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .info__card__textArea {
+    width: 550px;
+  }
+  .info__card__textArea__title {
+    font-size: 35px;
+    margin-bottom: 32px;
+  }
+  .info__card__textArea__subtitle {
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+  .info__card {
+    gap: 28px;
+  }
+  .info__card__img {
+    width: 311.7px;
+    height: 376.74px;
+  }
+  .statistics {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .functional {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .functional__cardsArea__card {
+    width: 422px;
+    height: 509.3px;
+  }
+
+  .functional__cardsArea__card__mainImg {
+    width: 345.9px;
+    height: 135.77px;
+  }
+
+  .functional__card__textArea__subtitle {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .functional__card__textArea {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 17px;
+  }
+  .functional__card__textArea__icons {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 16px;
+  }
+  .usefulLinks__bricks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    grid-template-rows: repeat(3, minmax(176px, 1fr));
+    gap: 12px;
+  }
+  .div6 {
+    border-radius: 16px;
+    border-bottom-right-radius: 86px;
+
+    grid-column: span 3 / span 3;
+    grid-row-start: 3;
+  }
+
+  .div5 {
+    background: rgb(0, 187, 80);
+    border-radius: 16px;
+    border-top-left-radius: 86px;
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+}
+@media screen and (max-width: 960px) {
+}
+@media screen and (max-width: 840px) {
+}
+@media screen and (max-width: 650px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 428px) {
+}
+@media screen and (max-width: 360px) {
+}
+@media screen and (max-width: 320px) {
+}
