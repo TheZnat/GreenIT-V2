@@ -55,6 +55,11 @@
     height: 90px;
     margin-bottom: 16px;
   }
+
+  .usefulLinks {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .usefulLinks__bricks {
     display: grid;
     grid-template-columns: repeat(3, minmax(240px, 1fr));
@@ -78,8 +83,216 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .info {
+    margin-top: 76px;
+  }
+  .info__card__img {
+    width: 266.36px;
+    height: 322.38px;
+  }
+  .info__card__textArea__title {
+    font-size: 32px;
+    margin-bottom: 25px;
+    line-height: 42px;
+  }
+  .info__card__textArea__subtitle {
+    font-size: 17px;
+    margin-bottom: 24px;
+  }
+  .info__card {
+    gap: 25px;
+  }
+
+  .info__card__textArea {
+    width: 500px;
+  }
+
+  .statistics {
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+
+  .statistics__inform__item__title {
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+  .statistics__inform__item__img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 22px;
+  }
+
+  .functional__cardsArea__card {
+    width: 380px;
+    height: 503.3px;
+  }
+  .functional__card__textArea__icons {
+    width: 74px;
+    height: 74px;
+    margin-bottom: 15px;
+  }
+  .cards--icons {
+    width: 50px;
+    height: 50px;
+  }
+  .functional__card__textArea__title {
+    font-size: 30px;
+  }
+  .functional__card__textArea {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 15px;
+  }
+  .functional__card__textArea__subtitle {
+    line-height: 23px;
+  }
+
+  .functional__cardsArea__card__mainImg {
+    width: 311.48px;
+    height: 122.25px;
+  }
+  .functional {
+    margin-bottom: 65px;
+  }
 }
 @media screen and (max-width: 840px) {
+  .info {
+    margin-top: 65px;
+  }
+  .info__card__textArea {
+    width: 423px;
+  }
+  .info__card__textArea__subtitle {
+    font-size: 17px;
+    margin-bottom: 22px;
+    line-height: 25px;
+  }
+  .info__card__textArea__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+  .info__card__img {
+    width: 246.11px;
+    height: 297.47px;
+    padding-top: 8px;
+    padding-left: 6.38px;
+  }
+
+  .info__text__logo {
+    width: 313px;
+    height: 56px;
+  }
+
+  .functional__cardsArea__card {
+    width: 364px;
+    height: 503.3px;
+  }
+
+  .statistics__inform__item__title {
+    font-size: 90px;
+    margin-bottom: 14px;
+  }
+
+  .statistics__inform__item__subtitle {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .info {
+    margin-top: 60px;
+  }
+  .info__card {
+    gap: 22px;
+  }
+  .statistics {
+    margin-top: 62px;
+    margin-bottom: 62px;
+  }
+  .statistics__inform {
+    margin-top: 35px;
+    justify-content: space-around;
+  }
+  .statistics__inform__item__subtitle {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .statistics__inform__item__title {
+    font-size: 85px;
+    margin-bottom: 12px;
+  }
+  .statistics__inform__item__img {
+    width: 65px;
+    height: 66px;
+    margin-bottom: 18px;
+  }
+
+  .functional__cardsArea {
+    justify-content: space-around;
+  }
+
+  .functional {
+    margin-bottom: 62px;
+  }
+  .usefulLinks {
+    margin-bottom: 62px;
+  }
+}
+
+@media screen and (max-width: 777px) {
+  .info {
+    margin-top: 55px;
+  }
+  .info__text__logo {
+    width: 288px;
+    height: 52px;
+  }
+  .info__card {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241 241 241);
+    border-radius: 48px;
+    gap: 10px;
+  }
+  .info__card__img {
+    margin-top: 0;
+    width: 446px;
+    height: 239px;
+    border-radius: 48px;
+    padding-bottom: 9px;
+    padding-right: 11px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .info__card__textArea__title {
+    font-size: 25px;
+    margin-bottom: 18px;
+    line-height: 30px;
+  }
+  .info__card__textArea {
+    width: 434px;
+  }
+  .info__card__textArea__bth {
+    padding-bottom: 29px;
+  }
+  .info__card__textArea__bth {
+    justify-content: center;
+  }
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__title {
+    display: block;
+  }
+
+  .statistics__inform {
+    margin-top: 45px;
+  }
 }
 @media screen and (max-width: 650px) {
 }
