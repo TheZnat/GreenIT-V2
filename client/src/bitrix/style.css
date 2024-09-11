@@ -200,6 +200,7 @@
 
 .blocks {
   background: rgb(217, 217, 217);
+  overflow: hidden;
 }
 
 .usefulLinks__bricks {
