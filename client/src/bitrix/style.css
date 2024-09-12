@@ -41,6 +41,7 @@
 }
 
 .info__card__img {
+  object-fit: cover;
   margin-top: 10px;
   width: 329.56px;
   height: 398.33px;
@@ -213,6 +214,20 @@
 .usefulLinks__bricks__item {
   position: relative;
 }
+
+@media (hover: hover) {
+  .usefulLinks__bricks__item:hover {
+    box-shadow: 3px 2px 22px 2px rgba(62, 250, 143, 0.476);
+  }
+}
+
+@media (hover: none) {
+  .usefulLinks__bricks__item:active {
+    box-shadow: 3px 2px 22px 2px rgba(62, 250, 143, 0.476);
+  }
+}
+
+
 
 .usefulLinks__bricks__item__title {
   position: absolute;

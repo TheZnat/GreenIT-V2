@@ -33,7 +33,7 @@ export function addSlider() {
       let temp = document.querySelector(".test");
       temp.append(mySwiper);
       temp.style.marginLeft = "-12px";
-      findPostId(1);
+      findPostId();
       import("./sliderIos.css");
 
       const module = await import("swiper/bundle");
@@ -75,7 +75,7 @@ export function addSlider() {
       swiperWrapper.innerHTML = htmlSlider;
       caseCards.append(swiperWrapper);
       document.querySelector(".test").append(caseCards);
-      findPostId(1);
+      findPostId();
 
       const module = await import("/src/slider/sliderClass.js");
       const { Gallery } = module;

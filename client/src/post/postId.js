@@ -2,8 +2,8 @@ import axios from "axios";
 import { PREFIX } from "../helper/Api";
 const classNameSlideLink = "slide__item__link";
 
-export function findPostId(id) {
-  let link = id == 1 ? "./src/post/post.html" : "../post/post.html";
+export function findPostId() {
+  
   let slideLink = document.querySelectorAll(`.${classNameSlideLink}`);
 
   Array.from(slideLink).forEach((el) => {
@@ -28,7 +28,7 @@ export function findPostId(id) {
     const targetElement = event.target;
     const dataValue = targetElement.value;
     await sendDataFindPos(dataValue);
-    window.location.href = link;
+    window.location.href = "./src/post/post.html";
   }
 
   Array.from(slideLink).forEach((el) => {

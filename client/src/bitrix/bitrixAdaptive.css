@@ -19,6 +19,8 @@
     gap: 28px;
   }
   .info__card__img {
+    height: 376.74px;
+    object-fit: cover;
     width: 311.7px;
     height: 376.74px;
   }

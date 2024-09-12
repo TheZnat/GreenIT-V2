@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Главная страница -->
+  <url>
+    <loc>https://spb-git.ru/</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Раздел "Услуги" -->
+  <url>
+    <loc>https://spb-git.ru/#services</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Раздел "О нас" -->
+  <url>
+    <loc>https://example.com/#about</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Раздел "Кейсы" -->
+  <url>
+    <loc>https://spb-git.ru/index.html#case</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Раздел "Контакты" -->
+  <url>
+    <loc>https://spb-git.ru/index.html#contacts</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Страница Битрекс24 -->
+  <url>
+    <loc>https://example.com/src/bitrix/index.html</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Политика конфиденциальности -->
+  <url>
+    <loc>https://spb-git.ru/polit.pdf</loc>
+    <lastmod>2024-09-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

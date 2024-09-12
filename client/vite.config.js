@@ -10,7 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         post: resolve(__dirname, "./src/post/post.html"),
-        bitrix: resolve(__dirname, "./src/bitrix/Index.html"),
+        bitrix: resolve(__dirname, "Bitrix24.html"),
       },
     },
   },
