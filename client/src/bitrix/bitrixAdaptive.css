@@ -259,9 +259,14 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    background: rgb(241 241 241);
-    border-radius: 48px;
+    /* background: rgb(241 241 241);
+    border-radius: 48px; */
     gap: 10px;
+    border-radius: 48px;
+    box-shadow: 8px 1px 15px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(43px);
+
+    background: rgba(255, 255, 255, 0.96);
   }
   .info__card__img {
     margin-top: 0;
@@ -341,12 +346,212 @@
     bottom: 22px;
   }
 }
+@media screen and (max-width: 630px) {
+  .statistics__inform__item__subtitle {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .statistics__inform__item__title {
+    font-size: 67px;
+    margin-bottom: 1px;
+  }
+  .statistics__inform__item__img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+  }
+  .statistics__inform {
+    gap: 0px;
+  }
+  .usefulLinks__bricks {
+    grid-template-columns: repeat(2, minmax(154px, 1fr));
+    grid-template-rows: repeat(4, minmax(122px, 1fr));
+  }
+  .usefulLinks__bricks__item__img--1 {
+    bottom: 4px;
+    right: 16px;
+  }
+  .usefulLinks__bricks__item__img--4 {
+    bottom: 34px;
+  }
+
+  .usefulLinks__bricks__item__img--5 {
+    width: 99px;
+    height: 129px;
+  }
+}
 
 @media screen and (max-width: 580px) {
+  .info__card__textArea {
+    width: 368px;
+  }
+  .info__card__img {
+    width: 380px;
+    height: 226px;
+  }
+  .info__card__textArea__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+    line-height: 29px;
+  }
+  .info__card__textArea__subtitle {
+    font-size: 15px;
+    margin-bottom: 19px;
+    line-height: 24px;
+  }
+  .info__card__textArea__bth {
+    padding-bottom: 26px;
+  }
+  .statistics__inform__item__title {
+    font-size: 52px;
+    margin-bottom: 0px;
+  }
+  .section__title {
+    text-align: center;
+    padding-right: 0px;
+  }
+  .statistics {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .statistics__inform__item__subtitle {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .functional,
+  .usefulLinks {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .usefulLinks__bricks {
+    grid-template-columns: repeat(2, minmax(130px, 180px));
+    grid-template-rows: repeat(4, minmax(103px, 123px));
+  }
+  .div1 {
+    border-top-left-radius: 60px;
+  }
+  .div3 {
+    border-radius: 16px;
+    border-top-right-radius: 60px;
+  }
+  .div5 {
+    border-top-left-radius: 60px;
+  }
+  .div6 {
+    border-bottom-right-radius: 60px;
+  }
+  .usefulLinks__bricks__item__title {
+    left: 11px;
+    bottom: 14px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .usefulLinks__bricks__item__img--3 {
+    width: 84px;
+    height: 92px;
+    object-fit: contain;
+    left: 26px;
+  }
+  .usefulLinks__bricks__item__img--4 {
+    bottom: 20px;
+  }
+  .usefulLinks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 428px) {
-}
-@media screen and (max-width: 360px) {
-}
-@media screen and (max-width: 320px) {
+  .info {
+    margin-top: 38px;
+  }
+  .info__text__logo {
+    width: 227px;
+    height: 38px;
+  }
+  .info__card__textArea {
+    width: 280px;
+  }
+  .info__card__img {
+    width: 293px;
+    height: 157px;
+    border-radius: 32px;
+  }
+  .info__card__textArea__title {
+    font-size: 20px;
+    margin-bottom: 9px;
+    line-height: 24px;
+  }
+  .info__card__textArea__subtitle {
+    font-size: 12px;
+    margin-bottom: 11px;
+    line-height: 19px;
+  }
+  .info__card {
+    border-radius: 32px;
+  }
+  .bth--porject {
+    gap: 3px;
+  }
+  .info__card__textArea__bth {
+    padding-bottom: 18px;
+  }
+  .statistics__inform__item__title {
+    font-size: 38px;
+  }
+  .statistics__inform__item__subtitle {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .statistics__inform__item__img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 7px;
+  }
+  .statistics__inform {
+    gap: 3px;
+  }
+  .statistics__inform {
+    margin-top: 30px;
+  }
+  .functional__cardsArea__card {
+    width: 303.24px;
+    height: 447px;
+    border-radius: 32px;
+  }
+  .functional__card__textArea {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .functional__card__textArea__icons {
+    width: 59px;
+    height: 59px;
+    margin-bottom: 12px;
+  }
+  .cards--icons {
+    width: 40px;
+    height: 40px;
+  }
+  .functional__card__textArea__title {
+    font-size: 26px;
+    line-height: 42px;
+  }
+
+  .functional__cardsArea__card__mainImg {
+    width: 248.56px;
+    height: 97.56px;
+    object-fit: cover;
+  }
+  .functional__card__textArea__subtitle {
+    line-height: 24px;
+    font-size: 15px;
+  }
+  .usefulLinks__bricks {
+    grid-template-columns: repeat(2, minmax(118px, 148px));
+    grid-template-rows: repeat(4, minmax(94px, 118px));
+    gap: 12px;
+  }
 }
