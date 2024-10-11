@@ -379,9 +379,6 @@
 }
 
 @media screen and (max-width: 360px) {
-  /* :root {
-    --linkText-size: 11px;
-  } */
   .header__nav {
     gap: 12px;
   }
